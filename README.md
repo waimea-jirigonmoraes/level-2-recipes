@@ -13,7 +13,7 @@ The app has the following key features:
 
 ## Supporting Documents
 
-These can be seen as a [GitHub Pages site here]()
+These can be seen as a [GitHub Pages site here](https://waimea-jirigonmoraes.github.io/level-2-recipes/)
 
 Task Instructions:
 - [Instruction documents](docs/instructions/)
