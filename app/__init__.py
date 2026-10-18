@@ -4,7 +4,6 @@
 #===========================================================
 
 from flask import Flask, request, session, render_template, flash, redirect, send_file, make_response
-from werkzeug.security import generate_password_hash, check_password_hash
 from dotenv import load_dotenv
 from os import getenv
 from io import BytesIO
@@ -21,26 +20,26 @@ app = Flask(__name__)
 #===========================================================
 
 #-----------------------------------------------------------
-# Home page - Show all notes
+# Home page
 #-----------------------------------------------------------
 @app.get("/")
-def show_notes():
-    with connect_db() as db:
-        sql = """
-            SELECT id, title, body, pinned, created
-            FROM note
-            ORDER BY pinned DESC, created DESC
-        """
-        params = ()
-        notes = db.execute(sql, params).fetchall()
+def show_home():
+    return render_template("pages/home.jinja")
 
-        flash("Test message")
-        flash("Test SUCCESS message", "success")
-        flash("Test INFO message", "info")
-        flash("Test WARNING message", "warning")
-        flash("Test ERROR message", "error")
+#-----------------------------------------------------------
+# rECIPE LIST
+#-----------------------------------------------------------
+@app.get("/recipes")
+def show_recipe_list():
+    return render_template("pages/list.jinja")
 
-        return render_template("pages/note_list.jinja", notes=notes)
+
+#-----------------------------------------------------------
+# Choc cakew
+#-----------------------------------------------------------
+@app.get("/recipe/chocolate")
+def show_choc_recipe():
+    return render_template("pages/chocolate.jinja")
 
 
 #===========================================================
@@ -52,6 +51,4 @@ init_logging(app)
 init_text_filters(app)
 init_date_filters(app)
 init_error_handlers(app)
-init_database()
-register_commands(app)
 

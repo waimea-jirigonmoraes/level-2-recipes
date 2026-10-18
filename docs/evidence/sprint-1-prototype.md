@@ -33,19 +33,25 @@ Replace this text with notes regarding the DB design.
 ### Required Data Input
 
 Replace this text with a description of what data will be input, and where / how it will be obtained.
+The data required for this project is the recepies name, photo of the recipes, ingredients, instructions and how many serves.
+The data will be obtanined from previous websites about recepies.
 
 ### Required Data Output
 
 Replace this text with a description of the outputs for the system - what types of data will be displayed?
+The types of data that will be displayed is photos of the recipes
 
 ### Required Data Processing
 
 Replace this text with a description of how the data will be processed to achieve the desired output(s) - any processes / formulae?
+The data is suppost to make the website easy for client to use, whenever she wants to use for the recipies. So therefore the recipies are easy to understand
+and to find.
 
 
 ## UI 'Flow'
 
 The first stage of prototyping was to explore how the UI might 'flow' between states, based on the required functionality.
+
 
 This Figma demo shows the initial design for the UI 'flow':
 
