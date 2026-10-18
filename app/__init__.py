@@ -1,6 +1,6 @@
 #===========================================================
-# PROJECT NAME HERE
-# By YOUR NAME HERE
+# recepies
+# By Julia Irigon Moraes 
 #===========================================================
 
 from flask import Flask, request, session, render_template, flash, redirect, send_file, make_response
@@ -35,7 +35,7 @@ def show_recipe_list():
 
 
 #-----------------------------------------------------------
-# Choc cakew
+# Chocolate Cake 
 #-----------------------------------------------------------
 @app.get("/recipe/chocolate")
 def show_choc_recipe():
@@ -45,6 +45,19 @@ def show_choc_recipe():
 #===========================================================
 # Configure the app
 #===========================================================
+#-----------------------------------------------------------
+# Carrot cake
+#-----------------------------------------------------------
+@app.get("/recipe/carrot")
+def show_carrot_recipe():
+    return render_template("pages/carrot.jinja")
+#-----------------------------------------------------------
+# Ciabatta Bread
+#-----------------------------------------------------------
+@app.get("/recipe/ciabata")
+def show_ciabata_recipe():
+    return render_template("pages/ciabata.jinja")
+
 load_dotenv()
 app.config.from_prefixed_env()
 init_logging(app)
