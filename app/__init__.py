@@ -27,7 +27,7 @@ def show_home():
     return render_template("pages/home.jinja")
 
 #-----------------------------------------------------------
-# rECIPE LIST
+# RECEPIE LIST
 #-----------------------------------------------------------
 @app.get("/recipes")
 def show_recipe_list():
@@ -35,28 +35,28 @@ def show_recipe_list():
 
 
 #-----------------------------------------------------------
-# Chocolate Cake 
+# Cake recipe
 #-----------------------------------------------------------
-@app.get("/recipe/chocolate")
-def show_choc_recipe():
-    return render_template("pages/chocolate.jinja")
+@app.get("/recipe/cake")
+def show_cake_recipe():
+    return render_template("pages/cake.jinja")
 
 
 #===========================================================
 # Configure the app
 #===========================================================
 #-----------------------------------------------------------
-# Carrot cake
+# Bread recipe
 #-----------------------------------------------------------
-@app.get("/recipe/carrot")
-def show_carrot_recipe():
-    return render_template("pages/carrot.jinja")
+@app.get("/recipe/bread")
+def show_bread_recipe():
+    return render_template("pages/bread.jinja")
 #-----------------------------------------------------------
-# Ciabatta Bread
+# Muffin recipe
 #-----------------------------------------------------------
-@app.get("/recipe/ciabata")
-def show_ciabata_recipe():
-    return render_template("pages/ciabata.jinja")
+@app.get("/recipe/muffin")
+def show_muffin_recipe():
+    return render_template("pages/muffin.jinja")
 
 load_dotenv()
 app.config.from_prefixed_env()

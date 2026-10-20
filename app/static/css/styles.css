@@ -1,6 +1,6 @@
 /*===========================================================
-  PROJECT NAME HERE
-  By YOUR NAME HERE
+  Recepie
+  By Julia Irigon Moraes
 ===========================================================*/
 
 :root {
@@ -84,5 +84,20 @@ main > h2 {
 
         }
     }
-}
+}.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 
+    .recipe {
+        width: 15rem;
+        padding: 1rem;
+        box-shadow: 0 0.5rem 1rem #0004;
+        border: 1px solid var(--border-col);
+        background-color: var(--back-col-panel);
+
+        img {
+
+        }
+    }
+}

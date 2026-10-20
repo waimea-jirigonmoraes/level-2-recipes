@@ -1,14 +1,18 @@
-# ... Project
+# Recipie Project
 
 ## Project Description
 
-This is an app that ...
+This is an app that helps a user find a recepie very easily, and that has clear intructions about it 
 
 The app has the following key features:
 - Feature one
 - Feature two
 - Feature three
 - ...
+
+## Live Site
+https://level-2-recipes.onrender.com/
+
 
 
 ## Supporting Documents
