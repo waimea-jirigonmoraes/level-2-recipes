@@ -27,14 +27,6 @@ def show_home():
     return render_template("pages/home.jinja")
 
 #-----------------------------------------------------------
-# RECEPIE LIST
-#-----------------------------------------------------------
-@app.get("/recipes")
-def show_recipe_list():
-    return render_template("pages/list.jinja")
-
-
-#-----------------------------------------------------------
 # Cake recipe
 #-----------------------------------------------------------
 @app.get("/recipe/cake")
