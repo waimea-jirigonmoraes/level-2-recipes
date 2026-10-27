@@ -1,0 +1,41 @@
+{#=====================================================
+  Home page
+=====================================================#}
+
+{% extends 'pages/_base.jinja' %}
+
+
+{% block content %}
+
+    <h2>Muffin Recipes</h2>
+
+    <section class="recipes">
+    
+      <div class="recipe">
+        <h4>Muffin recipe</h4>
+        <img src="/static/images/chocolate_muffin.jpg" alt="Double chocolate chip">
+        <a href="/recipe/choc-muffin">See recipe</a>
+      </div>
+
+      <div class="recipe">
+        <h4>Banana muffin recipe</h4>
+        <img src="/static/images/banana_muffin.jpg" alt="Double chocolate chip">
+        <a href="/recipe/ banana-muffin">See recipe</a>
+      </div>
+
+      <div class="recipe">
+        <h4> blueberry muffin recipe</h4>
+        <img src="/static/images/blueberry_muffin.jpg" alt="Double chocolate chip">
+        <a href="/recipe/blueberry-muffin">See recipe</a>
+      </div>
+
+      <div class="recipe">
+        <h4> White Chocolate and Raspberry muffin recipe</h4>
+        <img src="/static/images/raspberry_muffin.jpg" alt="Double chocolate chip">
+        <a href="/recipe/raspberry-muffin">See recipe</a>
+      </div>
+
+    </section> 
+
+{% endblock %}
+
