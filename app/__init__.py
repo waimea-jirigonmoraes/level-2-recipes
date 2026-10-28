@@ -32,11 +32,19 @@ def show_home():
 @app.get("/muffins")
 def show_muffin_menu():
     return render_template("pages/menu-muffins.jinja")
+
+@app.get("/bread")
+def show_bread_menu():
+    return render_template("pages/menu-bread.jinja")
+@app.get("/cake")
+def show_cake_menu():
+    return render_template("pages/menu-cake.jinja")
+#-----------------------------------------------------------
+# Banana muffin
+#-----------------------------------------------------------
 @app.get("/banana/muffins")
-def show_banana_muffin_menu():
+def show_banana_muffins_menu():
     return render_template("pages/menu-muffins.jinja")
-
-
 
 #-----------------------------------------------------------
 # Recipe pages
