@@ -42,9 +42,9 @@ def show_cake_menu():
 #-----------------------------------------------------------
 # Banana muffin
 #-----------------------------------------------------------
-@app.get("/banana/muffins")
+@app.get("/banana")
 def show_banana_muffins_menu():
-    return render_template("pages/menu-muffins.jinja")
+    return render_template("pages/banana-muffins.jinja")
 
 #-----------------------------------------------------------
 # Recipe pages
