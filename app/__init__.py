@@ -40,13 +40,6 @@ def show_bread_menu():
 def show_cake_menu():
     return render_template("pages/menu-cake.jinja")
 #-----------------------------------------------------------
-# Banana muffin
-#-----------------------------------------------------------
-@app.get("/banana")
-def show_banana_muffins_menu():
-    return render_template("pages/banana-muffins.jinja")
-
-#-----------------------------------------------------------
 # Recipe pages
 #-----------------------------------------------------------
 @app.get("/recipe/cake")
@@ -57,9 +50,28 @@ def show_cake_recipe():
 def show_bread_recipe():
     return render_template("pages/recipe-bread.jinja")
 
+@app.get("/recipe/ciabatta")
+def show_ciabatta_recipe():
+    return render_template("pages/recipe-ciabatta.jinja")
+
+
 @app.get("/recipe/choc-muffin")
 def show_muffin_recipe():
     return render_template("pages/recipe-muffin.jinja")
+
+@app.get("/recipe/banana-muffin")
+def show_banana_recipe():
+    return render_template("pages/recipe-banana.jinja")
+
+@app.get("/recipe/raspberry-muffin")
+def show_raspberry_recipe():
+    return render_template("pages/recipe-raspberry.jinja")
+
+@app.get("/recipe/blueberry-muffin")
+def show_blueberry_recipe():
+    return render_template("pages/recipe-blueberry.jinja")
+
+
 
 
 #===========================================================
